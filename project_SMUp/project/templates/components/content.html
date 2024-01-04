@@ -1,0 +1,15 @@
+{% for api in apis %}
+<div class="gateway h-100">
+<p>
+    {{ api.name_api }}
+</p>
+<div class="button-list">
+    <button class="rounded-button">
+        <a style="text-decoration: none;color: aliceblue;" href="{{ api.src.list }}">List of {{ api.name_api }}</a>
+    </button>
+    <button class="rounded-button btn-warning">
+        <a style="text-decoration: none;color: aliceblue;" href="{{ api.src.index }}">Index of {{ api.name_api }}</a>
+    </button>
+</div>
+</div>
+{% endfor %}
